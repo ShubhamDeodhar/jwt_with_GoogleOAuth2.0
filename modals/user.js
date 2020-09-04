@@ -7,12 +7,11 @@ const UserSchema = mongoose.Schema({
   },
   mobile: {
     type: Number,
-    required: true,
   },
   password: {
     type: String,
-    required: true,
   },
+  googleId: String,
   date: {
     type: Date,
     default: Date.now,

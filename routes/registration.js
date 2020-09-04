@@ -62,7 +62,9 @@ router.post(
         (err, token) => {
           if (err) {
             throw err;
-          } else res.json({ token });
+          } else {
+            res.json({ token });
+          }
         }
       );
     } catch (err) {
